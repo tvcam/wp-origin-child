@@ -1,0 +1,63 @@
+/*
+ Theme Name:   Origin child theme
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Origin Child Theme
+ Author:       Vibol Teav
+ Author URI:   http://example.com
+ Template:     Origin
+ Version:      1.0.0
+*/
+
+.entry-image {
+  float: left;
+  width: 12.5%;
+  position: relative;
+  color: #fff;
+}
+
+.entry-image img {
+  height: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+	.entry-image { width: 25%; }
+
+	.image-info .title { padding: 18px 7px 0; }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1279px) {
+	.entry-image { width: 25%; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+	.entry-image { width: 25%; }
+
+	.image-info .title { padding: 18px 7px 0; }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1279px) {
+	.entry-image { width: 25%%; }
+
+	.image-info { font-size: 14px; }
+		.image-info h2 { font-size: 22px; }
+		.image-info .title { padding: 34px 7px 0; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+	.entry-image { width: 25%%; }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1279px) {
+	.entry-image { width: 25%%; }
+}
+@media screen and (max-width: 1023px) {
+	.entry-image { width: 25%%; }
+}
+
+@media screen and (max-width: 767px) {
+	.entry-image { width: 33.3%; }
+}
+@media screen and (max-width: 479px) {
+	.entry-image { width: 50%; }
+}
