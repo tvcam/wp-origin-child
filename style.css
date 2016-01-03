@@ -1,10 +1,10 @@
 /*
  Theme Name:   Origin child theme
- Theme URI:    http://example.com/twenty-fifteen-child/
+ Theme URI:    https://github.com/tvcam/wp-origin-child
  Description:  Origin Child Theme
  Author:       Vibol Teav
- Author URI:   http://example.com
- Template:     Origin
+ Author URI:   https://github.com/tvcam
+ Template:     Origin Child
  Version:      1.0.0
 */
 
@@ -18,6 +18,23 @@
 .entry-image img {
   height: 100%;
   display: block;
+}
+
+.image-info {
+  background: rgba( 255,150,0,0.65 );
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.main-title {
+  background-color: transparent;
+}
+
+.post-thumbnail:before {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {

@@ -15,22 +15,8 @@
 	?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry-image masonry-item' ); ?>>
 			<?php print_thumbnail( $thumb, $thumbnail["use_timthumb"], $titletext, $width, $height, $classtext ); ?>
-			<div class="image-info">
+			<div class="image-info" style="background: <?php echo esc_html( et_get_option( 'box_bg_hover_color', 'rgba( 255,150,0,0.65 )' ) ); ?>">
 				<a href="<?php the_permalink(); ?>" class="image-link"><?php _e( 'Read more', 'Origin' ); ?></a>
-				<div class="title">
-					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				<!-- <?php
-					if ( $index_postinfo ){
-						echo '<p class="meta-info">';
-						et_postinfo_meta( $index_postinfo, et_get_option('origin_date_format'), esc_html__('0 comments','Origin'), esc_html__('1 comment','Origin'), '% ' . esc_html__('comments','Origin') );
-						echo '</p>';
-					}
-				?> -->
-				</div> <!-- .title -->
-				<!-- <div class="description">
-					<p><?php truncate_post( 65 ); ?></p>
-				</div> <!-- .description -->
-				<!-- <a href="<?php the_permalink(); ?>" class="readmore"><?php _e( 'Read more', 'Origin' ); ?><span></span></a> -->
 			</div> <!-- .image-info -->
 		</article> <!-- .entry-image -->
 	<?php endwhile; ?>
