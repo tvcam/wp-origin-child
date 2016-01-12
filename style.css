@@ -1,16 +1,32 @@
 /*
- Theme Name:   Origin child theme
+ Theme Name:   Origin Child
  Theme URI:    https://github.com/tvcam/wp-origin-child
  Description:  Origin Child Theme
  Author:       Vibol Teav
  Author URI:   https://github.com/tvcam
- Template:     Origin Child
+ Template:     Origin
  Version:      1.0.0
 */
 
+#info-bg {
+  box-shadow: none !important;
+}
+
+.image-info .title h2 a{
+  font-size: 14px;
+}
+
+.image-info .title {
+  overflow: ellipsis;
+  box-shadow: none !important;
+  position: relative;
+  top: 48%;
+  transform: translateY(-52%);
+}
+
 .entry-image {
   float: left;
-  width: 12.5%;
+  width: 16.66667%;
   position: relative;
   color: #fff;
 }
@@ -54,7 +70,7 @@
 }
 
 @media screen and (min-width: 1150px) and (max-width: 1279px) {
-	.entry-image { width: 25%%; }
+	.entry-image { width: 25%; }
 
 	.image-info { font-size: 14px; }
 		.image-info h2 { font-size: 22px; }
@@ -62,14 +78,14 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-	.entry-image { width: 25%%; }
+	.entry-image { width: 25%; }
 }
 
 @media screen and (min-width: 1150px) and (max-width: 1279px) {
-	.entry-image { width: 25%%; }
+	.entry-image { width: 25%; }
 }
 @media screen and (max-width: 1023px) {
-	.entry-image { width: 25%%; }
+	.entry-image { width: 25%; }
 }
 
 @media screen and (max-width: 767px) {

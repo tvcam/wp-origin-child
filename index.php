@@ -7,7 +7,7 @@
 
 		$thumb = '';
 		$width = (int) apply_filters( 'et_entry_image_width', 640 );
-		$height = (int) apply_filters( 'et_entry_image_height', 480 );
+		$height = (int) apply_filters( 'et_entry_image_height', auto );
 		$classtext = '';
 		$titletext = get_the_title();
 		$thumbnail = get_thumbnail( $width, $height, $classtext, $titletext, $titletext, false, 'Entryimage' );
@@ -17,6 +17,9 @@
 			<?php print_thumbnail( $thumb, $thumbnail["use_timthumb"], $titletext, $width, $height, $classtext ); ?>
 			<div class="image-info" style="background: <?php echo esc_html( et_get_option( 'box_bg_hover_color', 'rgba( 255,150,0,0.65 )' ) ); ?>">
 				<a href="<?php the_permalink(); ?>" class="image-link"><?php _e( 'Read more', 'Origin' ); ?></a>
+				<div class="title">
+					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+				</div> <!-- .title -->
 			</div> <!-- .image-info -->
 		</article> <!-- .entry-image -->
 	<?php endwhile; ?>
